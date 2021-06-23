@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="serif"
+        android:text="Hospital"
+        android:textColor="#02AB7B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="serif"
+        android:text="Get your token here..."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="276dp"
+        android:text="book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mobile"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="276dp"
+        android:text="status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+</androidx.constraintlayout.widget.ConstraintLayout>
